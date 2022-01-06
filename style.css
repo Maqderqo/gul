@@ -1,0 +1,173 @@
+body {
+  background-color: #d3dedc;
+  font-family: "Monda", sans-serif;
+}
+
+/* NAV */
+
+#mainnav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fas {
+  font-size: 30px;
+  padding-left: 50px;
+  color: red;
+}
+
+#mainnav h1 {
+  color: black;
+}
+
+#mainnav a {
+  color: #92a9bd;
+}
+
+#navigation a:hover {
+  opacity: 0.4;
+  transform: none;
+  color: rgb(67, 204, 228);
+}
+
+#mainnav ul {
+  background-color: rgb(2, 0, 3);
+  transform: skewX(-25deg);
+  margin-right: 20px;
+}
+
+#mainnav ul li ul {
+  transform: none;
+}
+
+#mainnav li a {
+  transform: skewX(25deg);
+}
+
+/* BODY */
+
+#section1 {
+  width: 20%;
+  height: 1000px;
+  position: fixed;
+}
+
+#section2 {
+  margin-top: 50px;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.text-muted {
+  text-align: center;
+}
+
+.flex1 {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 50px;
+}
+
+.flex {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 200px;
+  height: 360px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 1px rgb(34, 31, 31);
+}
+
+.fcard {
+  width: 200px;
+  height: 360px;
+  margin: 0 200px 0 20px;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 1px rgb(34, 31, 31);
+  flex-shrink: 0;
+}
+
+.fcard,
+.card:hover {
+  color: rgb(5, 5, 4);
+  box-shadow: 2px 20px 20px rgb(155, 73, 73);
+}
+
+.section2 {
+  width: 75%;
+}
+
+@media (max-width: 1000px) {
+  #section2 {
+    width: 100%;
+  }
+  #section1 {
+    display: none;
+  }
+  .flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 250px;
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#section1 ul li {
+  list-style: none;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#section1 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#section1 ul li a:hover {
+  opacity: 0.5;
+}
+
+#social-media li {
+  float: left;
+  margin-right: 10px;
+}
+
+.clear-fix {
+  clear: both;
+}
+hr {
+  border: 8px #333006;
+  border-style: none none dashed;
+  color: #fff;
+  background-color: #fff;
+  width: 70%;
+  margin: auto;
+}
